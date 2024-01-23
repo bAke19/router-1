@@ -1,0 +1,1 @@
+import{h as n,c as a,a as e,F as s,o as r}from"./index-dtCNaMQ_.js";const c=e("h1",null,"404",-1),p={__name:"NotFoundView",setup(l){const t=n(),o=()=>{t.push("/")};return(u,_)=>(r(),a(s,null,[c,e("button",{class:"btn btn-outline-dark",onClick:o},"Volver al Menú Principal")],64))}};export{p as default};
