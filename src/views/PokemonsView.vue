@@ -1,12 +1,12 @@
 <script setup>
-import {RouterLink} from "vue-router";
-import {useGetData} from "@/composables/getData";
+    import {RouterLink} from "vue-router";
+    import {useGetData} from "@/composables/getData";
 
-const {data, getData, loading, errorData} = useGetData()
-getData('https://pokeapi.co/api/v2/pokemon')
+    const {data, getData, loading, errorData} = useGetData()
+    getData('https://pokeapi.co/api/v2/pokemon')
 
-console.log(data.previous)
 </script>
+
 <template>
     <h1>Pokemons</h1>
     <p v-if="loading"> Cargando Información</p>
@@ -20,7 +20,7 @@ console.log(data.previous)
         <dv class="mt-2">
             <button 
             :disabled="!data.previous"
-            class="btn btn-warning me-2" 
+            class="btn btn-sm btn-warning me-2" 
             @click="getData(data.previous)">Preview</button>
         <button :disabled="!data.next" class="btn btn-primary me-2" @click="getData(data.next)">Next</button>
 
